@@ -1,12 +1,18 @@
 import React from "react";
 import "./StudentRegistration.css";
+import { useState } from "react";
 
 const StudentsRegistration: React.FC = () => {
+const [successMessage, setSuccessMessage] = useState("");
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log("Form submitted");
-  };
+console.log("successMessage",   successMessage)
+const handleSubmit = (e: React.FormEvent) => {
+  e.preventDefault();
+  console.log("Form submitted");
+  const message = "Form submitted successfully!";
+  setSuccessMessage(message);
+  alert(message);
+};
 
   return (
     <div className="container">
