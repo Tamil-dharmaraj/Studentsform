@@ -4,6 +4,7 @@ import { useState } from "react";
 
 const StudentsRegistration: React.FC = () => {
 const [successMessage, setSuccessMessage] = useState("");
+console.log("successMessage",  successMessage)
 
 const handleSubmit = (e: React.FormEvent) => {
   e.preventDefault();
