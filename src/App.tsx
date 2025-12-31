@@ -2,7 +2,12 @@
 import StudentsRegistration from "../src/Form/StudentsRegistration";
 
 function App() {
-  return <StudentsRegistration />;
+  return (
+    <>
+  <StudentsRegistration />;
+
+    </>
+  )
 }
 
 export default App;
